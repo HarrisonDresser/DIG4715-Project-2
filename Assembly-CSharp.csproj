@@ -37,7 +37,8 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\PlayerScript.cs" />
-     <Compile Include="Assets\Script\Camera.cs" />
+     <Compile Include="Assets\Script\CameraFollow.cs" />
+     <Compile Include="Assets\Script\SwingingAxe.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
