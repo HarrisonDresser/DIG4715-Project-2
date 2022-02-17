@@ -50,10 +50,12 @@
      <Compile Include="Assets\Script\SwingingAxeScript\SwingingAxe.cs" />
      <Compile Include="Assets\Script\PlayerScript\PlayerInteraction.cs" />
      <Compile Include="Assets\Script\CannonScript\CollisionDetector.cs" />
+     <Compile Include="Assets\pauseScript.cs" />
      <Compile Include="Assets\Script\CannonScript\CannonBall.cs" />
      <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
      <Compile Include="Assets\mainMenu_script.cs" />
      <Compile Include="Assets\Script\CannonScript\ShootingCannon.cs" />
+     <Compile Include="Assets\pauseMenu_script.cs" />
      <Compile Include="Assets\Script\PlayerScript\PlayerScript.cs" />
      <Compile Include="Assets\Script\Object_Measurer.cs" />
      <Compile Include="Assets\Script\CameraScript\CameraFollow.cs" />

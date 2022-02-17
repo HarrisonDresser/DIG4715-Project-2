@@ -31,7 +31,8 @@ public class mainMenu_script : MonoBehaviour
     //START BUTTON FUNCTIONS
     public void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Lab1");
+        Time.timeScale = 1;
     }
 
     //CREDIT BUTTON FUNCTIONS
