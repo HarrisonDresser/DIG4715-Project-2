@@ -8,6 +8,7 @@ TagManager:
   - interactiondetector
   - switch1
   - switch2
+  - key
   layers:
   - Default
   - TransparentFX
