@@ -9,6 +9,7 @@ TagManager:
   - switch1
   - switch2
   - key
+  - cageDoor
   layers:
   - Default
   - TransparentFX

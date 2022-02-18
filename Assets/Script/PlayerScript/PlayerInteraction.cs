@@ -7,7 +7,10 @@ public class PlayerInteraction : MonoBehaviour
     public bool isSwitch1InRange;
     public bool isSwitch2InRange;
     public bool isKeyInRange;
+    public bool isCageInRange;
+
     public bool hasKey;
+    public bool aiFollowPlayer;
 
     public GameObject movingDoor1;
     public GameObject movingDoor2;
@@ -15,17 +18,11 @@ public class PlayerInteraction : MonoBehaviour
     public GameObject prisionDoor;
     public GameObject key;
 
-
-
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         DoorInteraction();
         KeyInteraction(key);
+        PrisonDoorInteraction(prisionDoor);
     }
 
     void OnTriggerEnter(Collider other)
@@ -38,6 +35,9 @@ public class PlayerInteraction : MonoBehaviour
 
         if (other.gameObject.tag == "key")
             isKeyInRange = true;
+
+        if (other.gameObject.tag == "cageDoor")
+            isCageInRange = true;
     }
 
     void OnTriggerExit(Collider other)
@@ -45,6 +45,7 @@ public class PlayerInteraction : MonoBehaviour
         isSwitch2InRange = false;
         isSwitch2InRange = false;
         isKeyInRange = false;
+        isCageInRange = false;
     }
 
     void DoorInteraction()
@@ -82,6 +83,18 @@ public class PlayerInteraction : MonoBehaviour
                 movingDoor2.SetActive(false);
                 Destroy(key);
                 hasKey = true;
+            }
+        }
+    }
+
+    void PrisonDoorInteraction(GameObject prisionDoor)
+    {
+        if (isCageInRange && hasKey)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                prisionDoor.transform.Translate(0, 20f, 0f);
+                aiFollowPlayer = true;
             }
         }
     }
