@@ -10,6 +10,7 @@ TagManager:
   - switch2
   - key
   - cageDoor
+  - swingingAxe
   layers:
   - Default
   - TransparentFX

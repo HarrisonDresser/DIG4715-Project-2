@@ -21,7 +21,7 @@ public class PlayerScript : MonoBehaviour
         horizontalMove = Input.GetAxis("Horizontal");
         verticalMove = Input.GetAxis("Vertical");
 
-        Vector3 moveDirection = new Vector3(horizontalMove, 0, verticalMove).normalized;
+        Vector3 moveDirection = new Vector3(verticalMove * -1f, 0, horizontalMove);
         transform.Translate(moveDirection * speed * Time.deltaTime);
 
         //Needto research about character rotation
