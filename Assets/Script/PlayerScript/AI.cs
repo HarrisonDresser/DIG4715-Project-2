@@ -14,7 +14,7 @@ public class AI : MonoBehaviour
     void Awake()
     {
         playerInteraction =player.GetComponent<PlayerInteraction>();
-        Debug.Log("It's successfully called");
+        Debug.Log("PlayerInteraction scripts is successfully called");
     }
     
     void Start()
