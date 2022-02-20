@@ -11,6 +11,7 @@ TagManager:
   - key
   - cageDoor
   - swingingAxe
+  - cannon
   layers:
   - Default
   - TransparentFX

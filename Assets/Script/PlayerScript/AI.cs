@@ -13,10 +13,10 @@ public class AI : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        playerInteraction =player.GetComponent<PlayerInteraction>();
+        playerInteraction = player.GetComponent<PlayerInteraction>();
         Debug.Log("PlayerInteraction scripts is successfully called");
     }
-    
+
     void Start()
     {
         nav = GetComponent<NavMeshAgent>();
@@ -30,7 +30,7 @@ public class AI : MonoBehaviour
 
     void AIFollowCondtion()
     {
-        if(playerInteraction.aiFollowPlayer)
+        if (playerInteraction.aiFollowPlayer)
         {
             nav.SetDestination(target.position);
         }
