@@ -25,6 +25,12 @@ public class PlayerMovement : MonoBehaviour
         Vector3 moveDirection = new Vector3(-verticalMove, 0, horizontalMove);
         transform.Translate(moveDirection * speed * Time.deltaTime, Space.World);
 
+        if(moveDirection!=Vector3.zero)
+        {
+            transform.forward=moveDirection;
+
+        }
+
     }
 }
 
