@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class AI : MonoBehaviour
 {
-    [SerializeField] GameObject player;
+    public GameObject player;
     PlayerInteraction playerInteraction;
     public Transform target;
 

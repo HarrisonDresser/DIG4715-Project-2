@@ -12,7 +12,7 @@ public class GameOverMenuButton : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit();
+        SceneManager.LoadScene("MainMenu");
     }
    
 }

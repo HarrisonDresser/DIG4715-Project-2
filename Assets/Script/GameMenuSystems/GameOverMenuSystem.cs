@@ -12,7 +12,7 @@ public class GameOverMenuSystem : MonoBehaviour
 
     public void QuitLevel()
     {
-        Application.Quit();
+        SceneManager.LoadScene("MainScene");
     }
    
 }
