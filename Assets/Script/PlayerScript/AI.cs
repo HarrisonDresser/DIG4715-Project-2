@@ -14,7 +14,6 @@ public class AI : MonoBehaviour
     void Awake()
     {
         playerInteraction = player.GetComponent<PlayerInteraction>();
-        Debug.Log("PlayerInteraction scripts is successfully called");
     }
 
     void Start()
@@ -28,11 +27,13 @@ public class AI : MonoBehaviour
         AIFollowCondtion();
     }
 
-    void AIFollowCondtion()
+    public void AIFollowCondtion()
     {
+        
         if (playerInteraction.aiFollowPlayer)
         {
             nav.SetDestination(target.position);
+            Debug.Log("AI Start following Player");
         }
     }
 }

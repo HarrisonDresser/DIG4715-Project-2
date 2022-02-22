@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 2426875371665305933}
   - component: {fileID: 3022352595349765421}
   m_Layer: 0
-  m_Name: Character_Cloak
+  m_Name: NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -12,6 +12,7 @@ TagManager:
   - cageDoor
   - swingingAxe
   - cannon
+  - NPC
   layers:
   - Default
   - TransparentFX

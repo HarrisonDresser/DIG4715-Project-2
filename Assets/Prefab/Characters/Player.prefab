@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 3818841885379151267}
   - component: {fileID: 3818841885379151266}
   m_Layer: 0
-  m_Name: Character_Wizard
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

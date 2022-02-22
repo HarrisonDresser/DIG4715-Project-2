@@ -9,8 +9,11 @@ public class PlayerOnCollision : MonoBehaviour
 
     PlayerMovement playerMovement;
 
+
+    public GameObject playerKilledText;
     public GameObject gameOverPanel;
     public bool isGameOver = false;
+    public bool isPlayerKilled= false;
 
     // Start is called before the first frame update
     void Awake()
@@ -30,20 +33,22 @@ public class PlayerOnCollision : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision other) //DetectCollision of the objects by searching for tags
+     void OnCollisionEnter(Collision other) //DetectCollision of the objects by searching for tags
     {
         if (other.collider.tag == "swingingAxe" || other.collider.tag == "cannon")
             isGameOver=true;
+            isPlayerKilled=true;
             GameOverSystem();
     }
 
-    void GameOverSystem() //Axe Interaction
+    public void GameOverSystem() //Axe Interaction
     {
-        if (isGameOver)
+        if (isGameOver&& isPlayerKilled)
         {
             playerMovement.enabled = false;
             rb.constraints = RigidbodyConstraints.None;
             gameOverPanel.SetActive(true);
+            playerKilledText.SetActive(true);
         }
     }
 }

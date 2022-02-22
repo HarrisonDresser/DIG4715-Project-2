@@ -12,17 +12,17 @@ public class PlayerInteraction : MonoBehaviour
     public bool hasKey;
     public bool aiFollowPlayer;
 
+
     public GameObject movingDoor1;
     public GameObject movingDoor2;
-    public GameObject movingDoor3;
-    public GameObject prisionDoor;
+    public GameObject cageDoor;
     public GameObject key;
 
     void Update()
     {
         DoorInteraction();
         KeyInteraction(key);
-        PrisonDoorInteraction(prisionDoor);
+        PrisonDoorInteraction(cageDoor);
     }
 
     void OnTriggerEnter(Collider other)
@@ -31,7 +31,10 @@ public class PlayerInteraction : MonoBehaviour
             isSwitch1InRange = true;
 
         if (other.gameObject.tag == "switch2")
-            isSwitch1InRange = true;
+        {
+            isSwitch2InRange = true;
+            Debug.Log("Switch2 in range");
+        }
 
         if (other.gameObject.tag == "key")
             isKeyInRange = true;
@@ -42,7 +45,7 @@ public class PlayerInteraction : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        isSwitch2InRange = false;
+        isSwitch1InRange = false;
         isSwitch2InRange = false;
         isKeyInRange = false;
         isCageInRange = false;
@@ -54,9 +57,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                movingDoor1.SetActive(true);
-                movingDoor2.SetActive(false);
-                isSwitch1InRange = false;
+                movingDoor1.SetActive(false);
             }
         }
 
@@ -65,9 +66,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                movingDoor1.SetActive(true);
-                movingDoor3.SetActive(false);
-                movingDoor2.SetActive(true);
+                movingDoor2.SetActive(false);
             }
         }
     }
@@ -78,22 +77,19 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                movingDoor1.SetActive(false);
-                movingDoor3.SetActive(false);
-                movingDoor2.SetActive(false);
                 Destroy(key);
                 hasKey = true;
             }
         }
     }
 
-    void PrisonDoorInteraction(GameObject prisionDoor)
+    public void PrisonDoorInteraction(GameObject cageDoor)
     {
         if (isCageInRange && hasKey)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                prisionDoor.transform.Translate(0, 20f, 0f);
+                cageDoor.transform.Translate(0, -20f, 0f);
                 aiFollowPlayer = true;
             }
         }
