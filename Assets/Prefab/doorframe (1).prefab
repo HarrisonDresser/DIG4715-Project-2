@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6731243727472040910}
   - component: {fileID: 8831235373454388996}
   - component: {fileID: 5744023948303807657}
+  - component: {fileID: 269776369048915848}
   m_Layer: 0
   m_Name: doorframe (1)
   m_TagString: Untagged
@@ -93,5 +94,18 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 141.47278, y: 100, z: 100}
-  m_Center: {x: 0.090164185, y: 0, z: 0}
+  m_Size: {x: 123.51571, y: 100, z: 24.938187}
+  m_Center: {x: 9.068686, y: 0, z: -37.530445}
+--- !u!65 &269776369048915848
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7029597542525652689}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 106.89732, y: 100, z: 23.440348}
+  m_Center: {x: 1.1613489, y: 0, z: 36.236897}
