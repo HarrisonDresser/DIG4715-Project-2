@@ -8,6 +8,11 @@ TagManager:
   - interactiondetector
   - switch1
   - switch2
+  - key
+  - cageDoor
+  - swingingAxe
+  - cannon
+  - NPC
   layers:
   - Default
   - TransparentFX

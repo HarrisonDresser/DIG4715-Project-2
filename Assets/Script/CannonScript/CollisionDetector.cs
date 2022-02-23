@@ -8,7 +8,6 @@ public class CollisionDetector : MonoBehaviour
   {
         if(col.gameObject.tag=="wall")
         {
-            Debug.Log("The cannon ball hit wall");
             Destroy(gameObject);
         }
   }
