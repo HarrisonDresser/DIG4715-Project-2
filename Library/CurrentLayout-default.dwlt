@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 12004, y: 14042}
   vertical: 1
-  controlID: 100
+  controlID: 52
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 221}
   m_MaxSize: {x: 12004, y: 4021}
   vertical: 0
-  controlID: 101
+  controlID: 53
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -301,14 +301,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scenes
   m_LastFoldersGridSize: 96
-  m_LastProjectPath: C:\Users\harry\Desktop\Dungeon Deliverance\DIG4715-Project-2
+  m_LastProjectPath: E:\Gamedev\repository\DIG4715-Project-2-main\DIG4715-Project-2-main
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 62}
-    m_SelectedIDs: a2480000
-    m_LastClickedID: 18594
-    m_ExpandedIDs: 0000000052480000544800009c4800004a49000000ca9a3b
+    m_SelectedIDs: 26550000
+    m_LastClickedID: 21798
+    m_ExpandedIDs: 00000000ee540000f054000020550000d055000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -336,7 +336,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005248000054480000
+    m_ExpandedIDs: 00000000ee540000f0540000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -457,9 +457,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: e4550000
       m_LastClickedID: 0
-      m_ExpandedIDs: eef1ffff4efbffff
+      m_ExpandedIDs: 3ce9ffff3eeaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -572,9 +572,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.42544046, y: -0.15957393, z: 0.07649383, w: 0.8875164}
   m_Size:
-    m_Target: 16.95183
+    m_Target: 29.142262
     speed: 2
-    m_Value: 16.95183
+    m_Value: 29.142262
   m_Ortho:
     m_Target: 0
     speed: 2
