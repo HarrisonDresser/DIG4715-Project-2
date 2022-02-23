@@ -25,13 +25,12 @@ public class PlayerMovement : MonoBehaviour
         Vector3 moveDirection = new Vector3(-verticalMove, 0, horizontalMove);
         transform.Translate(moveDirection * speed * Time.deltaTime, Space.World);
 
-        /*
-        if(moveDirection!=Vector3.zero)
+        if (moveDirection != Vector3.zero)
         {
-            transform.forward=moveDirection;
+            Quaternion rotation = Quaternion.LookRotation(moveDirection, Vector3.up);
 
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
         }
-        */
 
     }
 }

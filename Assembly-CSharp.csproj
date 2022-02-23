@@ -55,6 +55,10 @@
      <Compile Include="Assets\Script\PlayerScript\PlayerMovement.cs" />
      <Compile Include="Assets\Script\Object_Measurer.cs" />
      <Compile Include="Assets\Script\CameraScript\CameraFollow.cs" />
+<<<<<<< HEAD
+=======
+     <Compile Include="Assets\Script\EndPointScript.cs" />
+>>>>>>> a46b94319318d21e606cdceedb45a1dc9908a281
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
