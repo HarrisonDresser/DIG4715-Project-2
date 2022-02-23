@@ -33,11 +33,14 @@ public class PlayerInteraction : MonoBehaviour
         if (other.gameObject.tag == "switch2")
         {
             isSwitch2InRange = true;
-            Debug.Log("Switch2 in range");
+
         }
 
         if (other.gameObject.tag == "key")
+        {
             isKeyInRange = true;
+            Debug.Log("Key is in range");
+        }
 
         if (other.gameObject.tag == "cageDoor")
             isCageInRange = true;
@@ -79,6 +82,7 @@ public class PlayerInteraction : MonoBehaviour
             {
                 Destroy(key);
                 hasKey = true;
+                Debug.Log("Key destroyed");
             }
         }
     }
