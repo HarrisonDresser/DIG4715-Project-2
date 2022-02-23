@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - wall
-  - interactiondetector
   - switch1
   - switch2
   - key
@@ -13,6 +12,7 @@ TagManager:
   - swingingAxe
   - cannon
   - NPC
+  - EndPointDetector
   layers:
   - Default
   - TransparentFX
