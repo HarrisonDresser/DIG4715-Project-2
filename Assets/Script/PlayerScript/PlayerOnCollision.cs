@@ -36,9 +36,11 @@ public class PlayerOnCollision : MonoBehaviour
      void OnCollisionEnter(Collision other) //DetectCollision of the objects by searching for tags
     {
         if (other.collider.tag == "swingingAxe" || other.collider.tag == "cannon")
+        {
             isGameOver=true;
             isPlayerKilled=true;
             GameOverSystem();
+        }
     }
 
     public void GameOverSystem() //Axe Interaction

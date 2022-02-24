@@ -157,6 +157,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePosition: {fileID: 2946017924574417710}
-  bullet: {fileID: 6434752545711536589, guid: cdd97d14016c8a740ba230d6099a8eab, type: 3}
+  bullet: {fileID: 4180630023324212999, guid: 06b39441bffe18f4183dcd6ec483460e, type: 3}
   delayTime: 2
   intervalTime: 4
