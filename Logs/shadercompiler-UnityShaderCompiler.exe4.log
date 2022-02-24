@@ -1,9 +1,0 @@
-Base path: 'C:/Program Files/Unity/Editor/Data', plugins path 'C:/Program Files/Unity/Editor/Data/PlaybackEngines'
-Cmd: initializeCompiler
-
-Cmd: shutdown
-<<<<<<< HEAD
-
-Quitting shader compiler process
-=======
->>>>>>> parent of 38862a94 (Fixed Floor)
