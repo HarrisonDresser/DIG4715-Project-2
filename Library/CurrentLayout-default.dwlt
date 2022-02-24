@@ -20,11 +20,7 @@ MonoBehaviour:
     height: 1341
   m_ShowMode: 4
   m_Title: Scene
-<<<<<<< HEAD
   m_RootView: {fileID: 6}
-=======
-  m_RootView: {fileID: 9}
->>>>>>> parent of f07fbb0c (Nothing Changed)
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
@@ -36,37 +32,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-<<<<<<< HEAD
   m_EditorHideFlags: 1
-=======
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 552
-    width: 1608
-    height: 755
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 19}
-  m_Panes:
-  - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
->>>>>>> parent of f07fbb0c (Nothing Changed)
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -76,7 +42,6 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
     y: 30
     width: 2544
     height: 1291
@@ -85,16 +50,6 @@ MonoBehaviour:
   vertical: 0
   controlID: 61
 --- !u!114 &3
-=======
-    y: 0
-    width: 1608
-    height: 1307
-  m_MinSize: {x: 201, y: 442}
-  m_MaxSize: {x: 4001, y: 8042}
-  vertical: 1
-  controlID: 122
---- !u!114 &4
->>>>>>> parent of f07fbb0c (Nothing Changed)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,36 +75,7 @@ MonoBehaviour:
   - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 0
-<<<<<<< HEAD
 --- !u!114 &4
-=======
---- !u!114 &5
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 6}
-  - {fileID: 4}
-  m_Position:
-    serializedVersion: 2
-    x: 1608
-    y: 0
-    width: 587
-    height: 1307
-  m_MinSize: {x: 202, y: 342}
-  m_MaxSize: {x: 4002, y: 8042}
-  vertical: 1
-  controlID: 39
---- !u!114 &6
->>>>>>> parent of f07fbb0c (Nothing Changed)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,53 +92,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
     width: 481
     height: 765
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
-=======
-    width: 587
-    height: 645
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 17}
->>>>>>> parent of f07fbb0c (Nothing Changed)
   m_Panes:
   - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
-<<<<<<< HEAD
 --- !u!114 &5
-=======
---- !u!114 &7
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 12}
-  - {fileID: 8}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 30
-    width: 2560
-    height: 1307
-  m_MinSize: {x: 679, y: 442}
-  m_MaxSize: {x: 12004, y: 8042}
-  vertical: 0
-  controlID: 120
---- !u!114 &8
->>>>>>> parent of f07fbb0c (Nothing Changed)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -259,13 +148,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
     width: 2544
     height: 1341
-=======
-    width: 2560
-    height: 1357
->>>>>>> parent of f07fbb0c (Nothing Changed)
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -336,7 +220,6 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
     width: 1943
     height: 1291
   m_MinSize: {x: 403, y: 492}
@@ -344,15 +227,6 @@ MonoBehaviour:
   vertical: 1
   controlID: 66
 --- !u!114 &10
-=======
-    width: 2195
-    height: 1307
-  m_MinSize: {x: 403, y: 442}
-  m_MaxSize: {x: 8003, y: 8042}
-  vertical: 0
-  controlID: 121
---- !u!114 &13
->>>>>>> parent of f07fbb0c (Nothing Changed)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -371,7 +245,6 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
     width: 1943
     height: 765
   m_MinSize: {x: 403, y: 221}
@@ -379,18 +252,6 @@ MonoBehaviour:
   vertical: 0
   controlID: 67
 --- !u!114 &11
-=======
-    width: 1608
-    height: 552
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 18}
-  m_Panes:
-  - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &14
->>>>>>> parent of f07fbb0c (Nothing Changed)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -468,29 +329,23 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
     m_SelectedIDs: b04b0000
     m_LastClickedID: 19376
     m_ExpandedIDs: 000000009c4a00009e4a0000a04a0000a24a0000a44a0000aa4a0000ae4b000000ca9a3b
-=======
-    m_SelectedIDs: b6460000
-    m_LastClickedID: 18102
-    m_ExpandedIDs: 00000000b2460000b4460000b6460000b8460000ba460000c44600002448000000ca9a3b
->>>>>>> parent of f07fbb0c (Nothing Changed)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Switches
-      m_OriginalName: Switches
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 18130
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 0}
     m_SearchString: 
@@ -504,11 +359,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
     m_ExpandedIDs: 000000009c4a00009e4a0000a04a0000a24a0000a44a0000
-=======
-    m_ExpandedIDs: 00000000b2460000b4460000b6460000b8460000ba460000
->>>>>>> parent of f07fbb0c (Nothing Changed)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -629,15 +480,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
       m_SelectedIDs: 92460000
       m_LastClickedID: 18066
       m_ExpandedIDs: 04fbffff
-=======
-      m_SelectedIDs: 6a5a0000
-      m_LastClickedID: 23146
-      m_ExpandedIDs: 987cffff7ae2fffff8ecffffccf9ffff9056000046580000
->>>>>>> parent of f07fbb0c (Nothing Changed)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: gate1
@@ -697,15 +542,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< HEAD
     m_Target: {x: -24.043371, y: -4.9510865, z: -74.36531}
     speed: 2
     m_Value: {x: -24.043371, y: -4.9510865, z: -74.36531}
-=======
-    m_Target: {x: -10.6546335, y: 4.2512193, z: 10.807702}
-    speed: 2
-    m_Value: {x: -10.6546335, y: 4.2512193, z: 10.807702}
->>>>>>> parent of f07fbb0c (Nothing Changed)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -752,15 +591,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-<<<<<<< HEAD
     m_Target: {x: 0.06558427, y: -0.83144796, z: 0.10051614, w: 0.5424911}
     speed: 2
     m_Value: {x: 0.0654332, y: -0.8322578, z: 0.10061405, w: 0.5412414}
-=======
-    m_Target: {x: -0.24303553, y: 0.75148374, z: -0.3803857, w: -0.48122224}
-    speed: 2
-    m_Value: {x: -0.2431769, y: 0.7516094, z: -0.38186586, w: -0.47971535}
->>>>>>> parent of f07fbb0c (Nothing Changed)
   m_Size:
     m_Target: 10
     speed: 2
