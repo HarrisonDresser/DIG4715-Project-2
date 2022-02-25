@@ -29,11 +29,9 @@ public class AI : MonoBehaviour
 
     public void AIFollowCondtion()
     {
-        
         if (playerInteraction.aiFollowPlayer)
         {
             nav.SetDestination(target.position);
-            Debug.Log("AI Start following Player");
         }
     }
 }
