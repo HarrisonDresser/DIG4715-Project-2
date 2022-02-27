@@ -17,6 +17,24 @@ public class PlayerInteraction : MonoBehaviour
     public GameObject movingDoor2;
     public GameObject cageDoor;
     public GameObject key;
+    public GameObject DialogueCollider;
+
+    //CAMERA FUNCTIONS 
+    public Camera MainCamera;
+    public Camera NpcCamera;
+    public Camera Door1Camera;
+    public Camera Door2Camera;
+
+
+
+    void Start()
+    {
+        MainCamera.enabled = true;
+        NpcCamera.enabled = false;
+        Door1Camera.enabled = false;
+        Door2Camera.enabled = false;
+
+    }
 
     void Update()
     {
@@ -28,11 +46,24 @@ public class PlayerInteraction : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "switch1")
+        {
             isSwitch1InRange = true;
+        }
+            
 
         if (other.gameObject.tag == "switch2")
         {
             isSwitch2InRange = true;
+        }
+
+        
+        if (other.gameObject.tag == "Dialogue1")
+        {
+            MainCamera.enabled = false;
+            NpcCamera.enabled = true;
+            StartCoroutine(CameraWait());
+            Destroy(DialogueCollider);
+            Debug.Log("trigger entered");
 
         }
 
@@ -44,6 +75,7 @@ public class PlayerInteraction : MonoBehaviour
 
         if (other.gameObject.tag == "cageDoor")
             isCageInRange = true;
+            
     }
 
     void OnTriggerExit(Collider other)
@@ -61,6 +93,9 @@ public class PlayerInteraction : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 movingDoor1.SetActive(false);
+                MainCamera.enabled = false;
+                Door1Camera.enabled = true;
+                StartCoroutine(CameraWait());
             }
         }
 
@@ -70,6 +105,9 @@ public class PlayerInteraction : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 movingDoor2.SetActive(false);
+                MainCamera.enabled = false;
+                Door2Camera.enabled = true;
+                StartCoroutine(CameraWait());
             }
         }
     }
@@ -98,4 +136,23 @@ public class PlayerInteraction : MonoBehaviour
             }
         }
     }
+
+    IEnumerator CameraWait()
+    {
+        //Print the time of when the function is first called.
+        Debug.Log("Started Coroutine at timestamp : " + Time.time);
+
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(3);
+        NpcCamera.enabled = false;
+        Door1Camera.enabled = false;
+        Door2Camera.enabled = false;
+        MainCamera.enabled = true;
+
+
+        //After we have waited 5 seconds print the time again.
+        Debug.Log("Finished Coroutine at timestamp : " + Time.time);
+    }
+
+
 }

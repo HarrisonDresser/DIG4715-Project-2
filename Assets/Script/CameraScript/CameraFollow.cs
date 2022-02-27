@@ -16,6 +16,8 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        MainCamera.enabled = true;
+        NpcCamera.enabled = false;
 
     }
 
@@ -28,11 +30,13 @@ public class CameraFollow : MonoBehaviour
 
     }
 
-    public void OnTriggerEnter2D(Collider2D collider)
+    void OnTriggerEnter(Collider other)
     {
-        if (collider.transform.CompareTag("Dialogue1"))
+        if (other.gameObject.tag == "Dialogue1")
         {
-
+            MainCamera.enabled = false;
+            NpcCamera.enabled = true;
+            Debug.Log("trigger entered");
         }
     }
 
