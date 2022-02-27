@@ -25,6 +25,13 @@ public class PlayerInteraction : MonoBehaviour
     public Camera Door1Camera;
     public Camera Door2Camera;
 
+    //Animator Variables
+    
+    public GateScript gateScript;
+    public GateScript gateScript2;
+    public GateScript gateScript3;
+
+    Rigidbody m_Rigidbody;
 
 
     void Start()
@@ -33,6 +40,7 @@ public class PlayerInteraction : MonoBehaviour
         NpcCamera.enabled = false;
         Door1Camera.enabled = false;
         Door2Camera.enabled = false;
+
 
     }
 
@@ -62,7 +70,7 @@ public class PlayerInteraction : MonoBehaviour
             MainCamera.enabled = false;
             NpcCamera.enabled = true;
             StartCoroutine(CameraWait());
-            Destroy(DialogueCollider);
+            Destroy(DialogueCollider, 5);
             Debug.Log("trigger entered");
 
         }
@@ -92,10 +100,12 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                movingDoor1.SetActive(false);
+                //movingDoor1.SetActive(false);
                 MainCamera.enabled = false;
                 Door1Camera.enabled = true;
+                gateScript.GateMovement();
                 StartCoroutine(CameraWait());
+                
             }
         }
 
@@ -104,9 +114,10 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                movingDoor2.SetActive(false);
+                //movingDoor2.SetActive(false);
                 MainCamera.enabled = false;
                 Door2Camera.enabled = true;
+                gateScript2.GateMovement2();
                 StartCoroutine(CameraWait());
             }
         }
@@ -131,7 +142,8 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                cageDoor.transform.Translate(0, -20f, 0f);
+                //cageDoor.transform.Translate(0, -20f, 0f);
+                gateScript3.CellDoor();
                 aiFollowPlayer = true;
             }
         }

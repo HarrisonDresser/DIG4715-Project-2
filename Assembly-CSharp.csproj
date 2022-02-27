@@ -67,6 +67,7 @@
      <Compile Include="Assets\Script\PlayerScript\PlayerMovement.cs" />
      <Compile Include="Assets\Script\Object_Measurer.cs" />
      <Compile Include="Assets\Script\CameraScript\CameraFollow.cs" />
+     <Compile Include="Assets\Script\GateScript.cs" />
      <Compile Include="Assets\Script\EndPointScript.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
