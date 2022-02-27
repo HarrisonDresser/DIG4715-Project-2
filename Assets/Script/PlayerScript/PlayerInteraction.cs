@@ -9,10 +9,13 @@ public class PlayerInteraction : MonoBehaviour
     public bool isKeyInRange;
     public bool isCageInRange;
 
+    //DelayTime
+    public float gateSceneWaitTime;
+
     public bool hasKey;
     public bool aiFollowPlayer;
 
-
+    //Interactable objects
     public GameObject movingDoor1;
     public GameObject movingDoor2;
     public GameObject cageDoor;
@@ -157,7 +160,7 @@ public class PlayerInteraction : MonoBehaviour
         Debug.Log("Started Coroutine at timestamp : " + Time.time);
 
         //yield on a new YieldInstruction that waits for 5 seconds.
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(gateSceneWaitTime);
         NpcCamera.enabled = false;
         Door1Camera.enabled = false;
         Door2Camera.enabled = false;

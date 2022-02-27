@@ -5,7 +5,12 @@ using UnityEngine;
 public class EndPointScript : MonoBehaviour
 {
     public GameObject victoryPannel;
+    PlayerMovement playerMovement;
 
+    void Awake()
+    {
+        playerMovement=GameObject.FindWithTag("Player").GetComponent<PlayerMovement>();
+    }
     void Start()
     {
 
@@ -21,8 +26,8 @@ public class EndPointScript : MonoBehaviour
     {
         if (other.gameObject.tag == "NPC")
         {
-            Debug.Log("Two Characters are detected");
             victoryPannel.SetActive(true);
+            playerMovement.enabled=false;
         }
 
     }
