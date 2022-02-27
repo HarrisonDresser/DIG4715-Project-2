@@ -69,6 +69,9 @@
      <Compile Include="Assets\Script\CameraScript\CameraFollow.cs" />
      <Compile Include="Assets\Script\GateScript.cs" />
      <Compile Include="Assets\Script\EndPointScript.cs" />
+     <Compile Include="Assets\Script\Dialouge Scripts\Dialouge.cs" />
+     <Compile Include="Assets\Script\Dialouge Scripts\DialogueManager.cs" />
+     <Compile Include="Assets\Script\Dialouge Scripts\DialogueTrigger.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

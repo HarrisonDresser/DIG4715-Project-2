@@ -30,6 +30,7 @@ public class PlayerInteraction : MonoBehaviour
     public GateScript gateScript;
     public GateScript gateScript2;
     public GateScript gateScript3;
+    public DialogueTrigger dialogueTrigger;
 
     Rigidbody m_Rigidbody;
 
@@ -69,6 +70,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             MainCamera.enabled = false;
             NpcCamera.enabled = true;
+            dialogueTrigger.TriggerDialogue();
             StartCoroutine(CameraWait());
             Destroy(DialogueCollider, 5);
             Debug.Log("trigger entered");
@@ -155,7 +157,7 @@ public class PlayerInteraction : MonoBehaviour
         Debug.Log("Started Coroutine at timestamp : " + Time.time);
 
         //yield on a new YieldInstruction that waits for 5 seconds.
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(7);
         NpcCamera.enabled = false;
         Door1Camera.enabled = false;
         Door2Camera.enabled = false;
