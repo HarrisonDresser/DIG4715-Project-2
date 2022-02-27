@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+    public Camera MainCamera;
+    public Camera NpcCamera;
+    public Camera Door1Camera;
+    public Camera Door2Camera;
+
+
 
     public GameObject player;
     private Vector3 cameraPosition = new Vector3(3, 10, 0);
@@ -21,4 +27,13 @@ public class CameraFollow : MonoBehaviour
      
 
     }
+
+    public void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.transform.CompareTag("Dialogue1"))
+        {
+
+        }
+    }
+
 }
