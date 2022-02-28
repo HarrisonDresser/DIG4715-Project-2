@@ -9,14 +9,44 @@ public class PlayerInteraction : MonoBehaviour
     public bool isKeyInRange;
     public bool isCageInRange;
 
+    //DelayTime
+    public float gateSceneWaitTime;
+
     public bool hasKey;
     public bool aiFollowPlayer;
 
-
+    //Interactable objects
     public GameObject movingDoor1;
     public GameObject movingDoor2;
     public GameObject cageDoor;
     public GameObject key;
+    public GameObject DialogueCollider;
+
+    //CAMERA FUNCTIONS 
+    public Camera MainCamera;
+    public Camera NpcCamera;
+    public Camera Door1Camera;
+    public Camera Door2Camera;
+
+    //Animator Variables
+    
+    public GateScript gateScript;
+    public GateScript gateScript2;
+    public GateScript gateScript3;
+    public DialogueTrigger dialogueTrigger;
+
+    Rigidbody m_Rigidbody;
+
+
+    void Start()
+    {
+        MainCamera.enabled = true;
+        NpcCamera.enabled = false;
+        Door1Camera.enabled = false;
+        Door2Camera.enabled = false;
+
+
+    }
 
     void Update()
     {
@@ -28,11 +58,25 @@ public class PlayerInteraction : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "switch1")
+        {
             isSwitch1InRange = true;
+        }
+            
 
         if (other.gameObject.tag == "switch2")
         {
             isSwitch2InRange = true;
+        }
+
+        
+        if (other.gameObject.tag == "Dialogue1")
+        {
+            MainCamera.enabled = false;
+            NpcCamera.enabled = true;
+            dialogueTrigger.TriggerDialogue();
+            StartCoroutine(CameraWait());
+            Destroy(DialogueCollider, 5);
+            Debug.Log("trigger entered");
 
         }
 
@@ -44,6 +88,7 @@ public class PlayerInteraction : MonoBehaviour
 
         if (other.gameObject.tag == "cageDoor")
             isCageInRange = true;
+            
     }
 
     void OnTriggerExit(Collider other)
@@ -60,7 +105,12 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                movingDoor1.SetActive(false);
+                //movingDoor1.SetActive(false);
+                MainCamera.enabled = false;
+                Door1Camera.enabled = true;
+                gateScript.GateMovement();
+                StartCoroutine(CameraWait());
+                
             }
         }
 
@@ -69,7 +119,11 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                movingDoor2.SetActive(false);
+                //movingDoor2.SetActive(false);
+                MainCamera.enabled = false;
+                Door2Camera.enabled = true;
+                gateScript2.GateMovement2();
+                StartCoroutine(CameraWait());
             }
         }
     }
@@ -93,9 +147,29 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                cageDoor.transform.Translate(0, -20f, 0f);
+                //cageDoor.transform.Translate(0, -20f, 0f);
+                gateScript3.CellDoor();
                 aiFollowPlayer = true;
             }
         }
     }
+
+    IEnumerator CameraWait()
+    {
+        //Print the time of when the function is first called.
+        Debug.Log("Started Coroutine at timestamp : " + Time.time);
+
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(gateSceneWaitTime);
+        NpcCamera.enabled = false;
+        Door1Camera.enabled = false;
+        Door2Camera.enabled = false;
+        MainCamera.enabled = true;
+
+
+        //After we have waited 5 seconds print the time again.
+        Debug.Log("Finished Coroutine at timestamp : " + Time.time);
+    }
+
+
 }

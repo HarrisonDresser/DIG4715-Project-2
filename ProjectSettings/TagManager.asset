@@ -13,6 +13,7 @@ TagManager:
   - cannon
   - NPC
   - EndPointDetector
+  - Dialogue1
   layers:
   - Default
   - TransparentFX
