@@ -37,12 +37,13 @@ public class PlayerInteraction : MonoBehaviour
     public DialogueTrigger dialogueTrigger;
     public SwitchScript switchScript;
     public SwitchScript switchScript2;
+    PlayerMovement playerMovement;
 
     Rigidbody m_Rigidbody;
 
     void Awake()
     {
-
+        playerMovement=GetComponent<PlayerMovement>();
     }
 
     void Start()
@@ -116,6 +117,7 @@ public class PlayerInteraction : MonoBehaviour
                 switchScript.switch1Triggered();
                 MainCamera.enabled = false;
                 Door1Camera.enabled = true;
+                playerMovement.enabled=false;
                 gateScript.GateMovement();
                 StartCoroutine(CameraWait());
 
@@ -131,8 +133,10 @@ public class PlayerInteraction : MonoBehaviour
                 switchScript.switch2Triggered();
                 MainCamera.enabled = false;
                 Door2Camera.enabled = true;
+                playerMovement.enabled=false;
                 gateScript2.GateMovement2();
                 StartCoroutine(CameraWait());
+                
 
             }
         }
@@ -175,6 +179,9 @@ public class PlayerInteraction : MonoBehaviour
         Door1Camera.enabled = false;
         Door2Camera.enabled = false;
         MainCamera.enabled = true;
+        playerMovement.enabled=true;
+        
+
 
 
         //After we have waited 5 seconds print the time again.

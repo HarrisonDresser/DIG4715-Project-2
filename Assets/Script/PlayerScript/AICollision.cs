@@ -16,7 +16,7 @@ public class AICollision : MonoBehaviour
     public GameObject gameOverPanel;
     public bool isGameOver = false;
     public bool isNPCkilled=false;
-    public GameObject NPCKilledText;
+    public GameObject NPCKilledImage;
 
     // Start is called before the first frame update
     void Awake()
@@ -52,7 +52,7 @@ public class AICollision : MonoBehaviour
             ai.isStopped = true;
             rb.constraints = RigidbodyConstraints.None;
             gameOverPanel.SetActive(true);
-            NPCKilledText.SetActive(true);
+            NPCKilledImage.SetActive(true);
             playerMovement.enabled=false;
         }
     }
