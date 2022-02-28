@@ -15,6 +15,7 @@ public class PlayerInteraction : MonoBehaviour
     public bool hasKey;
     public bool aiFollowPlayer;
 
+
     //Interactable objects
     public GameObject movingDoor1;
     public GameObject movingDoor2;
@@ -29,14 +30,20 @@ public class PlayerInteraction : MonoBehaviour
     public Camera Door2Camera;
 
     //Animator Variables
-    
+
     public GateScript gateScript;
     public GateScript gateScript2;
     public GateScript gateScript3;
     public DialogueTrigger dialogueTrigger;
+    public SwitchScript switchScript;
+    public SwitchScript switchScript2;
 
     Rigidbody m_Rigidbody;
 
+    void Awake()
+    {
+
+    }
 
     void Start()
     {
@@ -61,14 +68,14 @@ public class PlayerInteraction : MonoBehaviour
         {
             isSwitch1InRange = true;
         }
-            
+
 
         if (other.gameObject.tag == "switch2")
         {
             isSwitch2InRange = true;
         }
 
-        
+
         if (other.gameObject.tag == "Dialogue1")
         {
             MainCamera.enabled = false;
@@ -88,7 +95,7 @@ public class PlayerInteraction : MonoBehaviour
 
         if (other.gameObject.tag == "cageDoor")
             isCageInRange = true;
-            
+
     }
 
     void OnTriggerExit(Collider other)
@@ -106,11 +113,12 @@ public class PlayerInteraction : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 //movingDoor1.SetActive(false);
+                switchScript.switch1Triggered();
                 MainCamera.enabled = false;
                 Door1Camera.enabled = true;
                 gateScript.GateMovement();
                 StartCoroutine(CameraWait());
-                
+
             }
         }
 
@@ -120,10 +128,12 @@ public class PlayerInteraction : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 //movingDoor2.SetActive(false);
+                switchScript.switch2Triggered();
                 MainCamera.enabled = false;
                 Door2Camera.enabled = true;
                 gateScript2.GateMovement2();
                 StartCoroutine(CameraWait());
+
             }
         }
     }
