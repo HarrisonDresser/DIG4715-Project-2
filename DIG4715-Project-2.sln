@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Rider.Editor", "Unity
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.ProGrids.Editor", "Unity.ProGrids.Editor.csproj", "{91702853-c25e-5e94-3540-514790291240}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Sprite.Editor", "Unity.2D.Sprite.Editor.csproj", "{b26af45d-018a-939f-5d83-85ad57c33948}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VSCode.Editor", "Unity.VSCode.Editor.csproj", "{b4eff9b4-432a-3495-62a4-df5ab83f9f4f}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.ProBuilder.AssetIdRemapUtility", "Unity.ProBuilder.AssetIdRemapUtility.csproj", "{73b1950a-798c-0316-10a9-9dd0fec4bdc3}"
@@ -100,6 +102,8 @@ Global
 		{198b0697-08fc-ab2f-9bb2-b01bef4b556c}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91702853-c25e-5e94-3540-514790291240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{91702853-c25e-5e94-3540-514790291240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{b26af45d-018a-939f-5d83-85ad57c33948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b26af45d-018a-939f-5d83-85ad57c33948}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{b4eff9b4-432a-3495-62a4-df5ab83f9f4f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{b4eff9b4-432a-3495-62a4-df5ab83f9f4f}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73b1950a-798c-0316-10a9-9dd0fec4bdc3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
