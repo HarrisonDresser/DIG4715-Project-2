@@ -130,7 +130,7 @@ public class PlayerInteraction : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 //movingDoor2.SetActive(false);
-                switchScript.switch2Triggered();
+                switchScript2.switch2Triggered();
                 MainCamera.enabled = false;
                 Door2Camera.enabled = true;
                 playerMovement.enabled=false;

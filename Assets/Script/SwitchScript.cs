@@ -6,10 +6,13 @@ public class SwitchScript : MonoBehaviour
 {
 
     Animator animator;
+    public PlayerInteraction player;
     // Start is called before the first frame update
     void Start()
     {
         animator=GetComponent<Animator>();
+        //animator.SetBool("isActivated",false);
+        
     }
 
     public void switch1Triggered ()
@@ -20,8 +23,9 @@ public class SwitchScript : MonoBehaviour
 
      public void switch2Triggered ()
     {
-        
-        animator.SetBool("Activated",true);
+        animator.Play("Switch2_Activated");
+        //animator.SetBool("isActivated",true);
+        //animator.SetBool("SwitchOn",true);
         Debug.Log("I'm here");
     }
 }
