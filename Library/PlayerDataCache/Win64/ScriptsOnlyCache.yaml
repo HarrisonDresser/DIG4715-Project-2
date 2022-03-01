@@ -1,5 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - ReadmeEditor
     Assembly-CSharp.dll:
     - AI
     - AICollision
@@ -12,10 +14,10 @@ ScriptsOnlyBuild:
     - GameOverMenuSystem
     - GateScript
     - Logo_Controller
-    - Object_Measurer
     - PlayerInteraction
     - PlayerMovement
     - PlayerOnCollision
+    - Readme
     - ShootingCannon
     - SwingingAxe
     - SwitchScript
@@ -30,12 +32,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -97,65 +93,63 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1784}
+      Script: {instanceID: 1566}
     - Class: 114
-      Script: {instanceID: 1798}
+      Script: {instanceID: 1580}
     - Class: 114
-      Script: {instanceID: 1928}
+      Script: {instanceID: 1710}
     - Class: 114
-      Script: {instanceID: 1934}
+      Script: {instanceID: 1716}
     - Class: 114
-      Script: {instanceID: 1996}
+      Script: {instanceID: 1778}
     - Class: 114
-      Script: {instanceID: 2048}
+      Script: {instanceID: 1830}
     - Class: 114
-      Script: {instanceID: 2052}
+      Script: {instanceID: 1834}
     - Class: 114
-      Script: {instanceID: 2172}
+      Script: {instanceID: 1956}
     - Class: 114
-      Script: {instanceID: 2380}
+      Script: {instanceID: 2168}
     - Class: 114
-      Script: {instanceID: 2412}
+      Script: {instanceID: 2208}
     - Class: 114
-      Script: {instanceID: 2518}
+      Script: {instanceID: 2312}
     - Class: 114
-      Script: {instanceID: 2716}
+      Script: {instanceID: 2516}
+    - Class: 114
+      Script: {instanceID: 2636}
+    - Class: 114
+      Script: {instanceID: 2684}
     - Class: 114
       Script: {instanceID: 2834}
     - Class: 114
-      Script: {instanceID: 2878}
+      Script: {instanceID: 2942}
     - Class: 114
-      Script: {instanceID: 3020}
+      Script: {instanceID: 3062}
     - Class: 114
-      Script: {instanceID: 3128}
+      Script: {instanceID: 3174}
     - Class: 114
-      Script: {instanceID: 3246}
+      Script: {instanceID: 3314}
     - Class: 114
-      Script: {instanceID: 3356}
+      Script: {instanceID: 3470}
     - Class: 114
-      Script: {instanceID: 3494}
+      Script: {instanceID: 3504}
     - Class: 114
-      Script: {instanceID: 3648}
+      Script: {instanceID: 3546}
     - Class: 114
-      Script: {instanceID: 3682}
+      Script: {instanceID: 3704}
     - Class: 114
-      Script: {instanceID: 3724}
+      Script: {instanceID: 4058}
     - Class: 114
-      Script: {instanceID: 3880}
+      Script: {instanceID: 4264}
     - Class: 114
-      Script: {instanceID: 4232}
+      Script: {instanceID: 4312}
     - Class: 114
-      Script: {instanceID: 4438}
+      Script: {instanceID: 4480}
     - Class: 114
-      Script: {instanceID: 4484}
+      Script: {instanceID: 4832}
     - Class: 114
-      Script: {instanceID: 4558}
-    - Class: 114
-      Script: {instanceID: 4652}
-    - Class: 114
-      Script: {instanceID: 4988}
-    - Class: 114
-      Script: {instanceID: 5128}
+      Script: {instanceID: 4974}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -171,6 +165,10 @@ ScriptsOnlyBuild:
     - Class: 195
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -208,23 +206,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1784}
+      Script: {instanceID: 1566}
     - Class: 114
-      Script: {instanceID: 2380}
+      Script: {instanceID: 2168}
     - Class: 114
-      Script: {instanceID: 2518}
+      Script: {instanceID: 2312}
     - Class: 114
-      Script: {instanceID: 2716}
+      Script: {instanceID: 2516}
+    - Class: 114
+      Script: {instanceID: 2636}
+    - Class: 114
+      Script: {instanceID: 2776}
     - Class: 114
       Script: {instanceID: 2834}
     - Class: 114
-      Script: {instanceID: 2964}
+      Script: {instanceID: 3062}
     - Class: 114
-      Script: {instanceID: 3020}
-    - Class: 114
-      Script: {instanceID: 3246}
-    - Class: 114
-      Script: {instanceID: 3356}
+      Script: {instanceID: 3174}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -271,21 +269,21 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2048}
+      Script: {instanceID: 1830}
     - Class: 114
-      Script: {instanceID: 2370}
+      Script: {instanceID: 2158}
     - Class: 114
-      Script: {instanceID: 2518}
+      Script: {instanceID: 2312}
     - Class: 114
-      Script: {instanceID: 2626}
+      Script: {instanceID: 2424}
     - Class: 114
-      Script: {instanceID: 2716}
+      Script: {instanceID: 2516}
     - Class: 114
-      Script: {instanceID: 3020}
+      Script: {instanceID: 2834}
     - Class: 114
-      Script: {instanceID: 4520}
+      Script: {instanceID: 4348}
     - Class: 114
-      Script: {instanceID: 4818}
+      Script: {instanceID: 4650}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -773,7 +771,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 26e571465659ce7da733178742c23117
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SwitchScript
@@ -920,4 +918,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/TeamName_Scene.unity
   - Assets/Scenes/MainScene.unity
   - Assets/Scenes/Lab1.unity
-  playerPath: C:/Users/pipislayer/Downloads/New folder/DIG4715-Project 2.exe
+  playerPath: C:/Users/joejw/Desktop/BUILD/DIG4715-Project 2.exe
