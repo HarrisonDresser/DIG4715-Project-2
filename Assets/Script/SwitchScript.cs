@@ -20,6 +20,8 @@ public class SwitchScript : MonoBehaviour
 
      public void switch2Triggered ()
     {
-        animator.SetBool("isActivated",true);
+        
+        animator.SetBool("Activated",true);
+        Debug.Log("I'm here");
     }
 }
