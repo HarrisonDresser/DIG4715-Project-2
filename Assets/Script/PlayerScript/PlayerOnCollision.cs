@@ -10,7 +10,7 @@ public class PlayerOnCollision : MonoBehaviour
     PlayerMovement playerMovement;
 
 
-    public GameObject playerKilledText;
+    public GameObject playerKilledPannel;
     public GameObject gameOverPanel;
     public bool isGameOver = false;
     public bool isPlayerKilled= false;
@@ -50,7 +50,7 @@ public class PlayerOnCollision : MonoBehaviour
             playerMovement.enabled = false;
             rb.constraints = RigidbodyConstraints.None;
             gameOverPanel.SetActive(true);
-            playerKilledText.SetActive(true);
+            playerKilledPannel.SetActive(true);
         }
     }
 }
