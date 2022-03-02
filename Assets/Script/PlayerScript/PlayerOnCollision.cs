@@ -27,10 +27,7 @@ public class PlayerOnCollision : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            SceneManager.LoadScene("lab1");
-        }
+        
     }
 
      void OnCollisionEnter(Collision other) //DetectCollision of the objects by searching for tags

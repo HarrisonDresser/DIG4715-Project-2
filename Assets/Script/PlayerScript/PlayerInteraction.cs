@@ -20,6 +20,7 @@ public class PlayerInteraction : MonoBehaviour
     public GameObject movingDoor1;
     public GameObject movingDoor2;
     public GameObject cageDoor;
+    public GameObject exitDoor;
     public GameObject key;
     public GameObject DialogueCollider;
 
@@ -98,6 +99,10 @@ public class PlayerInteraction : MonoBehaviour
 
         if (other.gameObject.tag == "cageDoor")
             isCageInRange = true;
+
+        if(other.gameObject.tag=="exitDoor")
+            ExitDoorInteraction(exitDoor);
+        
 
     }
 
@@ -183,12 +188,15 @@ public class PlayerInteraction : MonoBehaviour
         Door2Camera.enabled = false;
         MainCamera.enabled = true;
         playerMovement.enabled=true;
-        
-
-
 
         //After we have waited 5 seconds print the time again.
         Debug.Log("Finished Coroutine at timestamp : " + Time.time);
+    }
+
+    public void ExitDoorInteraction(GameObject exitDoor)
+    {
+        if(aiFollowPlayer)
+            gateScript4.ExitDoor();
     }
 
 

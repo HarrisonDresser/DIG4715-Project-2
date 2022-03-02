@@ -38,5 +38,10 @@ public class GateScript : MonoBehaviour
         animator.Play("CellDoor-Open");
     }
     
+    public void ExitDoor()
+    {
+        animator.Play("EndGate_Open");
+    }
+    
 
 }
