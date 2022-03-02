@@ -37,5 +37,6 @@ public class GateScript : MonoBehaviour
     {
         animator.Play("CellDoor-Open");
     }
+    
 
 }

@@ -34,6 +34,8 @@ public class PlayerInteraction : MonoBehaviour
     public GateScript gateScript;
     public GateScript gateScript2;
     public GateScript gateScript3;
+    public GateScript gateScript4;
+
     public DialogueTrigger dialogueTrigger;
     public SwitchScript switchScript;
     public SwitchScript switchScript2;
@@ -163,6 +165,7 @@ public class PlayerInteraction : MonoBehaviour
             {
                 //cageDoor.transform.Translate(0, -20f, 0f);
                 gateScript3.CellDoor();
+                gateScript4.CellDoor();
                 aiFollowPlayer = true;
             }
         }
