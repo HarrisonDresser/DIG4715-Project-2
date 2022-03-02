@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerInteraction : MonoBehaviour
 {
@@ -22,7 +23,9 @@ public class PlayerInteraction : MonoBehaviour
     public GameObject cageDoor;
     public GameObject exitDoor;
     public GameObject key;
+    public GameObject keyImage;
     public GameObject DialogueCollider;
+
 
     //CAMERA FUNCTIONS 
     public Camera MainCamera;
@@ -46,7 +49,7 @@ public class PlayerInteraction : MonoBehaviour
 
     void Awake()
     {
-        playerMovement=GetComponent<PlayerMovement>();
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
     void Start()
@@ -100,9 +103,9 @@ public class PlayerInteraction : MonoBehaviour
         if (other.gameObject.tag == "cageDoor")
             isCageInRange = true;
 
-        if(other.gameObject.tag=="exitDoor")
+        if (other.gameObject.tag == "exitDoor")
             ExitDoorInteraction(exitDoor);
-        
+
 
     }
 
@@ -124,7 +127,7 @@ public class PlayerInteraction : MonoBehaviour
                 switchScript.switch1Triggered();
                 MainCamera.enabled = false;
                 Door1Camera.enabled = true;
-                playerMovement.enabled=false;
+                playerMovement.enabled = false;
                 gateScript.GateMovement();
                 StartCoroutine(CameraWait());
 
@@ -140,10 +143,10 @@ public class PlayerInteraction : MonoBehaviour
                 switchScript2.switch2Triggered();
                 MainCamera.enabled = false;
                 Door2Camera.enabled = true;
-                playerMovement.enabled=false;
+                playerMovement.enabled = false;
                 gateScript2.GateMovement2();
                 StartCoroutine(CameraWait());
-                
+
 
             }
         }
@@ -155,6 +158,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                keyImage.SetActive(true);
                 Destroy(key);
                 hasKey = true;
                 Debug.Log("Key destroyed");
@@ -169,6 +173,7 @@ public class PlayerInteraction : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 //cageDoor.transform.Translate(0, -20f, 0f);
+                keyImage.SetActive(false);
                 gateScript3.CellDoor();
                 gateScript4.CellDoor();
                 aiFollowPlayer = true;
@@ -187,7 +192,7 @@ public class PlayerInteraction : MonoBehaviour
         Door1Camera.enabled = false;
         Door2Camera.enabled = false;
         MainCamera.enabled = true;
-        playerMovement.enabled=true;
+        playerMovement.enabled = true;
 
         //After we have waited 5 seconds print the time again.
         Debug.Log("Finished Coroutine at timestamp : " + Time.time);
@@ -195,7 +200,7 @@ public class PlayerInteraction : MonoBehaviour
 
     public void ExitDoorInteraction(GameObject exitDoor)
     {
-        if(aiFollowPlayer)
+        if (aiFollowPlayer)
             gateScript4.ExitDoor();
     }
 
